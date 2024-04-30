@@ -6,14 +6,16 @@
     <title>Index</title>
 </head>
 <body>
-    <nav style="background-color: blueviolet;">
-        <h1>Menú</h1>
-        <ul>
-            <li><a href="/centre/students">Estudiants</a></li>
-            <li><a href="/centre/teachers">Professors</a></li>
-        </ul>
-    </nav>
+    {% include "menu.html" %}
+    
     <h1>INDEX</h1>
-    <footer style="background-color: tomato;">Footer</footer>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    {% include "footer.html" %}
+
 </body>
 </html>

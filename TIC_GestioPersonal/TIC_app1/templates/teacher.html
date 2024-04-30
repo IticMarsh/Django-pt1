@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav style="background-color: blueviolet;">
-        <h1>Menú</h1>
-    </nav>
-    <h1>TEACHERS</h1>
+{% extends 'index.html' %}
+{% block content %}
+
+    
+    <h1>INFORMACIO PROFESORAT TIC <br>DE BARCELONA (aplicació centre)</h1>
     <table border="1">
         <tr>
             <th>Nom</th>
@@ -32,6 +25,4 @@
         </tr>
         {% endfor %}
     </table>
-    <footer style="background-color: tomato;">Footer<a href="/">Go Back</a></footer>
-</body>
-</html>
+    {% endblock %}
