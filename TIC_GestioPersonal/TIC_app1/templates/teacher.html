@@ -12,6 +12,8 @@
             <th>Curs</th>
             <th>Tutor</th>
             <th>Mòduls Impartits</th>
+            <th>Accions</th>
+            <th>Accions</th>
         </tr>
         {% for teacher in data %}
         <tr>
@@ -22,6 +24,9 @@
             <td>{{ teacher.curs }}</td>
             <td>{{ teacher.tutor }}</td>
             <td>{{ teacher.mòduls_impartits|join:", " }}</td>
+            <td> modificar </td>
+            <td> eliminar </td>
+
         </tr>
         {% endfor %}
     </table>

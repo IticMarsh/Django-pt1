@@ -21,8 +21,14 @@ from TIC_app1 import views
 urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
-    path('centre/students', views.students),
-    path('centre/teachers', views.teachers),
+    path('centre/students', views.student),
+    path('centre/teachers', views.teacher),
+    path('user_form/', views.user_form, name='user_form'),
+    path('delete_user/<int:pk>/', views.delete_user, name='delete_user'),
+    path('update_user/<int:pk>/', views.update_user, name='update_user'),
+
+    # path('actualizar-usuario/<int:user_id>/', views.update_user, name='actualizar_usuario'),
+    # path('eliminar-usuario/<int:user_id>/', views.delete_user, name='eliminar_usuario'),
 
 
 ]
